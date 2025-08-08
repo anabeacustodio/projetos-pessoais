@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Receitas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Calculadora de Porções</h1>
+
+    <form id="recipe-form">
+      <label for="original-servings">Porções Originais:</label>
+      <input type="number" id="original-servings" required />
+
+      <label for="new-servings">Nova Quantidade de Porções:</label>
+      <input type="number" id="new-servings" required />
+
+      <h2>Ingredientes:</h2>
+      <div id="ingredients-list">
+        <div class="ingredient">
+          <input type="text" placeholder="Ingrediente" class="name" required />
+          <input type="number" placeholder="Quantidade" class="quantity" required />
+          <select class="unit">
+            <option>g</option>
+            <option>ml</option>
+            <option>colheres</option>
+            <option>xícaras</option>
+            <option>unidades</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="button" id="add-ingredient">+ Adicionar Ingrediente</button>
+      <button type="submit">Calcular</button>
+    </form>
+
+    <section id="result">
+      <h2>Ingredientes Ajustados:</h2>
+      <ul id="adjusted-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

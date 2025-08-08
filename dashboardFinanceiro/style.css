@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.form-section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.form-section input,
+.form-section select {
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button#adicionar {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button#adicionar:hover {
+  background-color: #27ae60;
+}
+
+.resumo {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.resumo p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.transacoes ul {
+  list-style: none;
+}
+
+.transacoes li {
+  background-color: #fafafa;
+  border-left: 5px solid #3498db;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.transacoes li.despesa {
+  border-left-color: #e74c3c;
+}
+
+.transacoes li.receita {
+  border-left-color: #2ecc71;
+}
+
+.btn-excluir {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
