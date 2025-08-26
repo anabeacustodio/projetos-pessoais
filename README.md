@@ -25,20 +25,6 @@
 
 ---
 
-## 🚀 Como rodar um projeto
-
-```bash
-# Clone este repositório
-git clone https://github.com/anabeacustodio/projetos-pessoais.git
-
-# Acesse a pasta do projeto desejado
-cd financas
-
-# Abra o arquivo index.html no navegador
-```
-
----
-
 ## 📄 Licença
 Este projeto está sob a licença **MIT** — veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
