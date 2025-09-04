@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard Financeiro</h1>
+    </header>
+
+    <main>
+        <!-- Upload de arquivo -->
+        <section class="upload-section">
+            <label for="fileInput">Importar CSV:</label>
+            <input type="file" id="fileInput" accept=".csv">
+        </section>
+
+        <!-- Resumo financeiro -->
+        <section class="resumo">
+            <div class="card">
+                <h3>Receitas</h3>
+                <p id="receitas">R$ 0,00</p>
+            </div>
+            <div class="card">
+                <h3>Despesas</h3>
+                <p id="despesas">R$ 0,00</p>
+            </div>
+            <div class="card saldo">
+                <h3>Saldo</h3>
+                <p id="saldo">R$ 0,00</p>
+            </div>
+        </section>
+
+        <!-- Gráfico -->
+        <section class="grafico">
+            <canvas id="graficoFinanceiro"></canvas>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Financeiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Dashboard Financeiro</h1>
+    
+    <section class="form-section">
+      <input type="text" id="descricao" placeholder="Descrição">
+      <input type="number" id="valor" placeholder="Valor (R$)">
+      <select id="tipo">
+        <option value="receita">Receita</option>
+        <option value="despesa">Despesa</option>
+      </select>
+      <button id="adicionar">Adicionar</button>
+    </section>
+
+    <section class="resumo">
+      <p>Saldo: <span id="saldo">R$ 0,00</span></p>
+      <p>Total de Receitas: <span id="total-receitas">R$ 0,00</span></p>
+      <p>Total de Despesas: <span id="total-despesas">R$ 0,00</span></p>
+    </section>
+
+    <section class="transacoes">
+      <h2>Transações</h2>
+      <ul id="lista-transacoes"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

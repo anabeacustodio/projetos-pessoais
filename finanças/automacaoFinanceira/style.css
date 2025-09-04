@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+/* Upload section */
+.upload-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.upload-section label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Cards do resumo */
+.resumo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    min-width: 150px;
+}
+
+.card h3 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.card.saldo p {
+    color: #2980b9;
+}
+
+/* Gráfico */
+.grafico {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .resumo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
