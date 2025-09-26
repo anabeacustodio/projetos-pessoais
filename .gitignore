@@ -36,3 +36,5 @@ Thumbs.db
 .idea/
 *.sublime-project
 *.sublime-workspace
+gastronomia/.DS_Store
+/gastronomia
